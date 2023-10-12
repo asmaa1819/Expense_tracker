@@ -13,8 +13,8 @@ html {
   min-height: 100%;
   font-family:"inter"
 }
-*:not(.fa-solid):not(.fa):not(e-icons) {
-    font-family: "inter"
+*:not(.fa-solid):not(.fa):not(.e-icons) {
+    font-family: "Inter"
 }
 
 body {

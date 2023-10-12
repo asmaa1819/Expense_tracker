@@ -1,13 +1,14 @@
 ﻿@model Expense_Tracker.Models.Category
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["PageTitle"] = Model.CategoryId == 0 ? "Create a new category" : "Update category";
+
 }
 
 
 <div class="row">
     <div class="col-md-7">
-        <div class="wdget p-5" >
+        <div class="wdget p-5" style="background-color:#212b36">
             <form asp-action="AddOrUpdate">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <input type="hidden" name="CategoryId" value="@Model.CategoryId" />
