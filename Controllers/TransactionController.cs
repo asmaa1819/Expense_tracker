@@ -81,7 +81,10 @@ namespace Expense_Tracker.Controllers
             var categorycollection = _context.Categorys.ToList();
             Category DefultCategory = new Category() { CategoryId=0,Title="Choose Category "};
             categorycollection.Insert(0,DefultCategory);
-            ViewBag.Categories = categorycollection;
+            ViewBag.Categorys = categorycollection;
+
+
+
         }
 
        
